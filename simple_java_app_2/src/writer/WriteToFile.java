@@ -25,6 +25,7 @@ public class WriteToFile {
 	public void write(String fileName, String content) {
 		try {
 			unsafeWrite(fileName, content);
+			System.out.println("File writtre succesfully");
 		} catch (Exception e) {
 			System.out.printf("Writing to file %s failed\n", fileName);
 			e.printStackTrace();
